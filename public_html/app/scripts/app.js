@@ -13,7 +13,7 @@
  * Main module of the application.
  */
 var app = angular.module('publicHtmlApp', [ 'ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'firebase' ]);
-
+app.constant('FIREBASE_URL', 'https://bottombitches.firebaseio.com/');
 app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
